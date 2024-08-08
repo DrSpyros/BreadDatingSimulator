@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="Bread Dating Sim"
+run/main_scene="res://player.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
 AL="*res://Scripts/Game Scripts/Autoload.gd"
+Dialogue="*res://Scripts/Game Scripts/Dialogue.gd"
 
 [rendering]
 

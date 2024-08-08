@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4hwsc226hdq8"]
+
+[ext_resource type="Script" path="res://Scripts/Game Scripts/Dialogue.gd" id="1_fnd5i"]
+[ext_resource type="Texture2D" uid="uid://dotgry8kyqlpc" path="res://Images/DialogueBox.png" id="2_h2tyv"]
+
+[node name="Dialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dialoguebox" type="Sprite2D" parent="."]
+position = Vector2(582, 465)
+texture = ExtResource("2_h2tyv")
+
+[node name="DialogueBox" type="Label" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 392.0
+offset_right = 1085.0
+offset_bottom = 584.0
+theme_override_font_sizes/font_size = 50
+text = "yes hello have sex with me"
+script = ExtResource("1_fnd5i")
+
+[node name="DialogueName" type="Label" parent="DialogueBox"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = -50.0
+offset_right = 270.0
+offset_bottom = 6.0
+theme_override_font_sizes/font_size = 40
+text = "Lieo"
+vertical_alignment = 1
+uppercase = true
