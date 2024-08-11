@@ -1,8 +1,7 @@
 extends Script
 
-var Characters = {
+var CharacterGenders = {
 	#true = male, false = female
-	#all characters are depicted as 18+ and not hot children
 	"DrSpyros": true, #Hot principal
 	"wolel": false, #Hot teacher
 	"lieo": true, #The only one with a girlfriend
@@ -12,6 +11,7 @@ var Characters = {
 	"Adam": true, #The one with a giant dick
 	"botorfj": false, #The nerd quiet, also small balls,
 	"endie": true, #Big black dude
-	"Gambinho": false #She didnt specify
-	
+	"Gambinho": false, #She didnt specify	
+	"Johnathium Stepbrorious": true, #That one weird Janitor
+	"Theo": true #Mark's Step-Bro
 }

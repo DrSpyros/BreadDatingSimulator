@@ -1,15 +1,21 @@
 extends Label
 
 @onready var TextBox = self
-@onready var Name = $DialogueName
+@onready var NameBox = $DialogueName
+@onready var SpriteBox = $Sprite2D
+signal SetTexture(CharTexture)
 
 func _ready():
 	await get_tree().create_timer(1).timeout
-	SendDialogue("peepeepoopoo")
+	SendDialogue("very cool dialogue", "DrSpyros", "Neutral")
 
-func SendDialogue(DialogueText):
+func SendDialogue(DialogueText, Name, State):
+	NameBox = Name
+	var CharTexture = "res://Images/CharacterSprites/" + str(Name) + "/" + str(State) + ".png"
+	emit_signal("SetTexture", CharTexture)
 	for Index in DialogueText.length():
 		var CutText = DialogueText.erase(Index, DialogueText.length())
-		text = CutText
+		self.text = CutText
 		await get_tree().create_timer(0.05).timeout
 		
+	self.text = DialogueText

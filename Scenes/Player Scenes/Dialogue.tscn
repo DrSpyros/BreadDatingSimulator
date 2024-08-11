@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4hwsc226hdq8"]
+
+[ext_resource type="Script" path="res://Scripts/Game Scripts/Dialogue.gd" id="1_fnd5i"]
+[ext_resource type="Texture2D" uid="uid://dotgry8kyqlpc" path="res://Images/DialogueBox.png" id="2_h2tyv"]
+[ext_resource type="Script" path="res://Scripts/Game Scripts/SetDialogueTexture.gd" id="3_cagfo"]
+
+[node name="Dialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dialoguebox" type="Sprite2D" parent="."]
+position = Vector2(582, 465)
+texture = ExtResource("2_h2tyv")
+
+[node name="DialogueBox" type="Label" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 391.0
+offset_right = 1091.0
+offset_bottom = 604.0
+theme_override_font_sizes/font_size = 46
+autowrap_mode = 3
+script = ExtResource("1_fnd5i")
+
+[node name="DialogueName" type="Label" parent="DialogueBox"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = -50.0
+offset_right = 270.0
+offset_bottom = 6.0
+theme_override_font_sizes/font_size = 40
+vertical_alignment = 1
+uppercase = true
+
+[node name="Sprite2D" type="Sprite2D" parent="DialogueBox"]
+position = Vector2(809, -183)
+scale = Vector2(1.568, 1.5)
+script = ExtResource("3_cagfo")
+
+[connection signal="SetTexture" from="DialogueBox" to="DialogueBox/Sprite2D" method="_on_dialogue_box_set_texture"]
