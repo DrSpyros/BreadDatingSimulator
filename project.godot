@@ -20,6 +20,13 @@ config/icon="res://icon.svg"
 AL="*res://Scripts/Game Scripts/Autoload.gd"
 Dialogue="*res://Scripts/Game Scripts/Dialogue.gd"
 
+[input]
+
+Up={
+"deadzone": 0.5,
+"events": []
+}
+
 [rendering]
 
 renderer/rendering_method="mobile"
