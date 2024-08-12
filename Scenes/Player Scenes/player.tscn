@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcqytjfwu18cv"]
+[gd_scene load_steps=5 format=3 uid="uid://cp6au103w5fhw"]
 
 [ext_resource type="Script" path="res://Scripts/Player Scripts/PlayerMovement.gd" id="1_bxfs1"]
 [ext_resource type="Texture2D" uid="uid://capv0avoypomb" path="res://icon.svg" id="2_2d7x5"]
-[ext_resource type="PackedScene" uid="uid://d4hwsc226hdq8" path="res://Dialogue.tscn" id="3_0esk3"]
+[ext_resource type="PackedScene" uid="uid://bkl3fhfksgc81" path="res://Scenes/Player Scenes/Dialogue.tscn" id="3_0esk3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s8hce"]
 size = Vector2(129, 129)
@@ -10,17 +10,16 @@ size = Vector2(129, 129)
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_bxfs1")
 
+[node name="Dialogue" parent="." instance=ExtResource("3_0esk3")]
+offset_left = -581.0
+offset_top = -297.0
+offset_right = -581.0
+offset_bottom = -297.0
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_2d7x5")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_s8hce")
-
-[node name="Dialogue" parent="." instance=ExtResource("3_0esk3")]
-offset_left = -578.0
-offset_top = -299.0
-offset_right = -578.0
-offset_bottom = -299.0

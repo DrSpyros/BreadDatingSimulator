@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 AL="*res://Scripts/Game Scripts/Autoload.gd"
-Dialogue="*res://Scripts/Game Scripts/Dialogue/Dialogue.gd"
 
 [input]
 

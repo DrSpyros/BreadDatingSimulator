@@ -1,4 +1,6 @@
-extends Script
+extends Node
+
+@onready var DialogueScene : Dialogue = null
 
 var CharacterGenders = {
 	#true = male, false = female
