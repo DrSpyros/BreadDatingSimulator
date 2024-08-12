@@ -3,6 +3,7 @@ extends CharacterBody2D
 @export var Speed = 150
 @export var CanMove = true
 
+
 func get_input():
 	var input_direction = Vector2.ZERO
 	var FinalSpeed = Speed
@@ -15,7 +16,5 @@ func get_input():
 	
 	move_and_slide()
 	
-	
 func _physics_process(delta):
-
 	get_input()

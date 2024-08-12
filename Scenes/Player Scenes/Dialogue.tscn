@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4hwsc226hdq8"]
 
-[ext_resource type="Script" path="res://Scripts/Game Scripts/Dialogue.gd" id="1_fnd5i"]
+[ext_resource type="Script" path="res://Scripts/Game Scripts/Dialogue/Dialogue.gd" id="1_fnd5i"]
 [ext_resource type="Texture2D" uid="uid://dotgry8kyqlpc" path="res://Images/DialogueBox.png" id="2_h2tyv"]
-[ext_resource type="Script" path="res://Scripts/Game Scripts/SetDialogueTexture.gd" id="3_cagfo"]
+[ext_resource type="Script" path="res://Scripts/Game Scripts/Dialogue/SetDialogueTexture.gd" id="3_cagfo"]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
