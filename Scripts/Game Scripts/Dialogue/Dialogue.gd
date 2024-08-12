@@ -7,8 +7,7 @@ signal PlayAnim(Anim)
 var AnimationPlayed = false
 
 func _ready():
-	$Dialoguebox.text = "a"
-	visible = true
+	visible = false
 	await get_tree().create_timer(2).timeout
 	SendDialogue("yes hello it;s me hot whoman", "MarkMayhem", "Talking_Neutral")
 
