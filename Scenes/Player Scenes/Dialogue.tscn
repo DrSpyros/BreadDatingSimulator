@@ -4,23 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://dotgry8kyqlpc" path="res://Images/DialogueBox.png" id="2_h2tyv"]
 [ext_resource type="Texture2D" uid="uid://gu314j241sam" path="res://Images/CharacterSprites/DrSpyros/Neutral.png" id="5_wnl8y"]
 
-[sub_resource type="Animation" id="Animation_pv6yx"]
-resource_name = "StartDialogue"
-length = 0.133337
-step = 0.0333333
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("DialogueBox/Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0001, 0.0002, 0.0003, 0.133333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1278, -183), Vector2(1278, -183), Vector2(1278, -183), Vector2(1278, -183), Vector2(809, -183)]
-}
-
 [sub_resource type="Animation" id="Animation_cmmg2"]
 resource_name = "DialogueTransition"
 length = 0.1
@@ -36,6 +19,23 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(809, -183), Vector2(809, -203), Vector2(809, -183)]
+}
+
+[sub_resource type="Animation" id="Animation_pv6yx"]
+resource_name = "StartDialogue"
+length = 0.133337
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DialogueBox/Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.0002, 0.0003, 0.133333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1278, -183), Vector2(1278, -183), Vector2(1278, -183), Vector2(1278, -183), Vector2(809, -183)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5wxjk"]
@@ -76,6 +76,7 @@ func _on_dialogue_set_texture(CharTexture):
 "
 
 [node name="Dialogue" type="ColorRect"]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

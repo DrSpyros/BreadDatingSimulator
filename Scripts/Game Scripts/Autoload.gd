@@ -1,6 +1,7 @@
 extends Node
 
 @onready var DialogueScene : Dialogue = null
+@onready var PlayerScene : Player = null
 
 var CharacterGenders = {
 	#true = male, false = female

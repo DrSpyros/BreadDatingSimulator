@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0inivta2cnde"
-path="res://.godot/imported/Neutral.png-ca3bafd9bfae502ebfd6c3976fab4f13.ctex"
+uid="uid://b53sqw23oi1h7"
+path="res://.godot/imported/Walking_Down.png-06120f5474f2ea5dbfe916e6427f6fdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/CharacterSprites/MarkMayhem/Neutral.png"
-dest_files=["res://.godot/imported/Neutral.png-ca3bafd9bfae502ebfd6c3976fab4f13.ctex"]
+source_file="res://Images/CharacterSprites/You/TopDownAnimations/Walking_Down.png"
+dest_files=["res://.godot/imported/Walking_Down.png-06120f5474f2ea5dbfe916e6427f6fdb.ctex"]
 
 [params]
 

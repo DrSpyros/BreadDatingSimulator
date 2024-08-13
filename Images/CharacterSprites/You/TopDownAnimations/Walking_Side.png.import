@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0inivta2cnde"
-path="res://.godot/imported/Neutral.png-ca3bafd9bfae502ebfd6c3976fab4f13.ctex"
+uid="uid://dyuy4tl781i31"
+path="res://.godot/imported/Walking_Side.png-bbac67c0ef0c2b0ccae0ad359647f128.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/CharacterSprites/MarkMayhem/Neutral.png"
-dest_files=["res://.godot/imported/Neutral.png-ca3bafd9bfae502ebfd6c3976fab4f13.ctex"]
+source_file="res://Images/CharacterSprites/You/TopDownAnimations/Walking_Side.png"
+dest_files=["res://.godot/imported/Walking_Side.png-bbac67c0ef0c2b0ccae0ad359647f128.ctex"]
 
 [params]
 

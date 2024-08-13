@@ -21,6 +21,7 @@ func _process(delta):
 		
 func SendDialogue(DialogueDic: Dictionary, Name):
 	visible = true
+	AL.PlayerScene.CanMove = false
 	var Dialogues: Array = DialogueDic.keys()
 	var LastState: String = ""
 	for CurrentDialogueIndex: int in DialogueDic.size():
@@ -63,3 +64,4 @@ func EndDialogue():
 	DialogueAnimation.play_backwards("StartDialogue")
 	await get_tree().create_timer(0.3).timeout
 	visible = false
+	AL.PlayerScene.CanMove = true
